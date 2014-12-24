@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
   def index
-    @users = User.where(activated: true)
+    @users = User.where(activated: false)
   end
 
   def show
